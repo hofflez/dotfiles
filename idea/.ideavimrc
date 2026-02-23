@@ -49,6 +49,11 @@ nnoremap <leader>e :action ActivateProjectToolWindow<CR>
 vnoremap < <gv
 vnoremap > >gv
 
+" ----- Running & Debugging
+
+nnoremap ,r :action ContextRun<CR>
+nnoremap ,c :action RunClass<CR>
+
 " ----- Plugins
 
 " Highlight copied text

@@ -5,6 +5,8 @@ setopt EXTENDED_HISTORY
 
 # set vi mode
 set -o vi
+# fix backspace in vi mode
+bindkey -v '^?' backward-delete-char
 
 # bind fzf to zsh (use ctrl-r to search cmd history)
 source <(fzf --zsh)
@@ -35,3 +37,4 @@ alias gd='git diff --color-words'
 alias gco='git checkout'
 
 
+export PATH="$HOME/.local/bin:$PATH"
